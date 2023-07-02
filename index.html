@@ -5,43 +5,110 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex">
 	<title>Alex Clark</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 	<script src="main.js"></script>
 </head>
 
 <body>
-	<h1>Alex Clark</h1>
-	<h2>CS 290 : Web Development</h2>
-	<p>
-		<!-- Explain what index means as it relates to websites and servers. -->
-		The index of a website often refers to the home page. This is usually
-		called <code>index.html</code>, though it does not have to be, and can be named something else. This
-		index page is what a website domain and server points to, and what is
-		shown to users by default when opening the website.
-		<br />
-		<!-- Explain can be seen in the browser's Web Dev/Inspector tools. What is different about the file's details on the web server versus the local computer? -->
-		The main difference from the local website vs the website on the
-		engineering server is the network tab. On the local website, no requests
-		are made, and it is simply shown to you. On the engineering server, it is
-		actually hosted elsewhere, and requests have to be made to access
-		resources like the index and other files
-		<br />
-		<!-- Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not. -->
-		From looking at the network tab, it looks like if no favicon is provided,
-		the engineering server one is used instead. This leads to it getting a 200
-		status, meaning it is fine, and the resource was accessed. <code>main.css</code> and <code>main.js</code> give
-		404 errors, meaning that the files were not found, which makes sense as the HTML is pointing to files that don't
-		exist.
-		<br />
-		<!-- Explain the parts of the URL to your web file. What are the scheme, subdomain, host domain, and resources?  -->
-		The URL for my file is <code>https://web.engr.oregonstate.edu/~clarka8/a1-clarka8/</code>. The scheme of the url
-		is <code>https://</code> meaning it a secure version of HTTP. The host is
-		<code>web.engr.oregonstate.edu`, where `web.engr.</code> is the subdomain, and <code>oregonstate.edu</code> is
-		the main domain. The path to the resource is <code>/~clarka8/a1-clarka8</code>, which shows that the file is
-		within my user's <code>public_html</code> on the engineering server, and in a folder called a1-clarka8.
-		<br />
-	</p>
+	<header>
+		<h1>Alex Clark</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Web Development Concepts</h2>
+			<article>
+				<h3>Web Servers</h3>
+				<p>
+					<!-- Explain what index means as it relates to websites and servers. -->
+					The <strong>index</strong> of a website often refers to the home page. This is usually
+					called <code>index.html</code>, though it does not have to be, and can be named something else. This
+					index page is what a website domain and server points to, and what is
+					shown to users by default when opening the website.
+					<br />
+					<br />
+					<!-- Explain can be seen in the browser's Web Dev/Inspector tools. What is different about the file's details on the web server versus the local computer? -->
+					The main difference from the local website vs the website on the
+					engineering server is the network tab. On the local website, no requests
+					are made, and it is simply shown to you. On the engineering server, it is
+					actually hosted elsewhere, and requests have to be made to access
+					resources like the index and other files
+					<br />
+					<br />
+					<!-- Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not. -->
+					From looking at the network tab, it looks like if no favicon is provided,
+					the engineering server one is used instead. This leads to it getting a 200
+					status, meaning it is fine, and the <strong>resource</strong> was accessed. <code>main.css</code>
+					and
+					<code>main.js</code> give
+					404 errors, meaning that the files were not found, which makes sense as the HTML is pointing to
+					files that don't
+					exist.
+					<br />
+					<br />
+					<!-- Explain the parts of the URL to your web file. What are the scheme, subdomain, host domain, and resources?  -->
+					The <strong>URL</strong> for my file is
+					<code>https://web.engr.oregonstate.edu/~clarka8/a1-clarka8/</code>. The <strong>scheme</strong> of
+					the url is <code>https://</code> meaning it a secure version of HTTP. The <strong>host</strong> is
+					<code>web.engr.oregonstate.edu`, where `web.engr.</code> is the <strong>subdomain</strong>, and
+					<code>oregonstate.edu</code> is the main domain. The <strong>path to the resource</strong> is
+					<code>/~clarka8/a1-clarka8</code>, which shows that the file is within my user's
+					<code>public_html</code> on the engineering server, and in a folder called a1-clarka8.
+					<br />
+				</p>
+			</article>
+			<article>
+				<h3>Frontend Design</h3>
+				<!--The concept of frontend design, in a <p> paragraph.-->
+				<p><strong>Frontend</strong> design is the part of the website that users interact with. Because of
+					this, it needs to be <strong>usable</strong>, and understandable to everyone. The frontend design is
+					anything the user sees or hears, whether it be text, styling of the website, audio, or videos.
+					Frontend design often also allows users to interact with the <strong>backend</strong> of the
+					website, or the servers, and needs to appropriately be responsive and show the user what is
+					happening.
+				</p>
+				</p>
+				<!--The five "E"s of usability, in a <dl> definition list that separates the topics and descriptions.-->
+				<dl>
+					<dt>Effective</dt>
+					<dd>Does the design do what the user needs it to do?</dd>
+					<dt>Efficient</dt>
+					<dd>Does the design do what it needs to do in as few steps as possible, and without hassle?</dd>
+					<dt>Easy to navigate</dt>
+					<dd>Is the design intuitive and easy to understand from a brief look?</dd>
+					<dt>Error-free</dt>
+					<dd>Does the design work well, and can users run into issues when trying to do something?</dd>
+					<dt>Enjoyable</dt>
+					<dd>Does the design keep them interested, and make them want to use it again?</dd>
+				</dl>
+				<!--The purpose of page layout tags, in a <p> paragraph.-->
+				<p>Instead of just using div tags to create a website, page layout tags can be an extremely helpful way
+					to create and separate out different parts of a website. This can be on the website itself, but also
+					the code, and can also make using css easier. It also is extremely important for directing
+					screen readers where to go, and giving added context. They can also give search engine crawlers
+					extra information about your site. In general, a <strong>main</strong> tag within the body will
+					contain <strong>sections</strong>, which then contain <strong>articles</strong>. Sections will have
+					h2 headers, while articles will have h3 headers</p>
+				<!--How anchors link to external content, internal content, and from page-to-page, in an <ol> ordered list.-->
+				<ol>
+					<li>To link external content, an &lt;a&gt; tag, or <strong>anchor</strong> can be used. This uses
+						the full url of the site, and text inside the tag will become clickable and take you to the URL
+					</li>
+					<li>To link internal content, the &lt;link&gt; tag is used. This is most commonly used for linking
+						other files to be used in the html, like css stylesheets or javascript code. It can also be used
+						for other external things like icons, or fonts.</li>
+					<li>To link between pages in a site, a &lt;nav&gt; tag is used, with anchors inside of it. When
+						referring to other pages in a site, you can use <strong>relative file paths</strong>, rather
+						than full file paths, which makes the link work, no matter the root the file is being stored in.
+					</li>
+				</ol>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<p>&#169; 2023 Alex Clark</p>
+	</footer>
 </body>
 
 </html>
