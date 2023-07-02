@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Alex Clark</title>
-		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-		<script src="main.js"></script>
-	</head>
-	<body>
-		<h1>Alex Clark</h1>
-		<h2>CS 290 : Web Development</h2>
-		<p>
-			<!-- Explain what index means as it relates to websites and servers. -->
-			The index of a website often refers to the home page. This is usually
-			called `index.html`, though it does not have to be, and can be named
-			something else. This index page is what a website domain and server points
-			to, and what is shown to users by default when opening the website.
-			<br />
-			<!-- Explain can be seen in the browser's Web Dev/Inspector tools. What is different about the file's details on the web server versus the local computer? -->
-			The main difference from the local website vs the website on the
-			engineering server is the network tab. On the local website, no requests
-			are made, and it is simply shown to you. On the engineering server, it is
-			actually hosted elsewhere, and requests have to be made to access
-			resources like the index and other files
-			<br />
-			<!-- Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not. -->
-			From looking at the network tab, it looks like if no favicon is provided,
-			the engineering server one is used instead. This leads to it getting a 200
-			status, meaning it is fine, and the resource was accessed. `main.css` and
-			`main.js` give 404 errors, meaning that the files were not found, which
-			makes sense as the HTML is pointing to files that don't exist.
-			<br />
-			<!-- Explain the parts of the URL to your web file. What are the scheme, subdomain, host domain, and resources?  -->
-			The URL for my file is
-			`https://web.engr.oregonstate.edu/~clarka8/a1-clarka8/` The scheme of the
-			url is `https://` meaning it a secure version of HTTP. The host is
-			`web.engr.oregonstate.edu`, where `web.engr.` is the subdomain, and
-			`oregonstate.edu` is the main domain. The path to the resource is
-			`/~clarka8/a1-clarka8`, which shows that the file is within my user's
-			`public_html` on the engineering server, and in a folder called
-			a1-clarka8.
-			<br />
-		</p>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Alex Clark</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<h1>Alex Clark</h1>
+	<h2>CS 290 : Web Development</h2>
+	<p>
+		<!-- Explain what index means as it relates to websites and servers. -->
+		The index of a website often refers to the home page. This is usually
+		called <code>index.html</code>, though it does not have to be, and can be named something else. This
+		index page is what a website domain and server points to, and what is
+		shown to users by default when opening the website.
+		<br />
+		<!-- Explain can be seen in the browser's Web Dev/Inspector tools. What is different about the file's details on the web server versus the local computer? -->
+		The main difference from the local website vs the website on the
+		engineering server is the network tab. On the local website, no requests
+		are made, and it is simply shown to you. On the engineering server, it is
+		actually hosted elsewhere, and requests have to be made to access
+		resources like the index and other files
+		<br />
+		<!-- Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not. -->
+		From looking at the network tab, it looks like if no favicon is provided,
+		the engineering server one is used instead. This leads to it getting a 200
+		status, meaning it is fine, and the resource was accessed. <code>main.css</code> and <code>main.js</code> give
+		404 errors, meaning that the files were not found, which makes sense as the HTML is pointing to files that don't
+		exist.
+		<br />
+		<!-- Explain the parts of the URL to your web file. What are the scheme, subdomain, host domain, and resources?  -->
+		The URL for my file is <code>https://web.engr.oregonstate.edu/~clarka8/a1-clarka8/</code>. The scheme of the url
+		is <code>https://</code> meaning it a secure version of HTTP. The host is
+		<code>web.engr.oregonstate.edu`, where `web.engr.</code> is the subdomain, and <code>oregonstate.edu</code> is
+		the main domain. The path to the resource is <code>/~clarka8/a1-clarka8</code>, which shows that the file is
+		within my user's <code>public_html</code> on the engineering server, and in a folder called a1-clarka8.
+		<br />
+	</p>
+</body>
+
 </html>
