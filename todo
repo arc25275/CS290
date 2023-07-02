@@ -1,0 +1,25 @@
+- A1 fixes @done
+  - Use <code> instead of `text` where it makes sense @done
+- A2 Changes
+  - Exclude Robots
+  - Body Layout changes
+    - Header
+    - <section> with <h2> Web Development Concepts, and two <article>s:
+      - <article> with <h3> Web Servers, and the existing paragraphs. Remove any reference to "Assignment 1" in the headings.
+      - <article> with <h3> Frontend Design. Explain the following topics using the third-person style in complete sentences using proper English grammar. Adhere to the Syllabus > Style Guide.
+        - The concept of frontend design, in a <p> paragraph.
+        - The five "E"s of usability, in a <dl> definition list that separates the topics and descriptions.
+        - The purpose of page layout tags, in a <p> paragraph.
+        - How anchors link to external content, internal content, and from page-to-page, in an <ol> ordered list.
+      - Add the <strong> tag to the names of key concepts on all paragraphs (even last week's paragraphs).
+    - <footer> with copyright statement in a <p> paragraph. Render the symbol using the ASCII entity, add a space, add the year, then add your first and last name. (No other text is needed.)
+  - contact.html
+    - boilerplate
+    - title with name
+    - Page layout same as index.html
+      - In <header>, h1 with name
+      - nav with 2 anchors that link to either page
+        - add to index
+      - h2 in section called Contact
+      - blank article
+      - same footer as index
