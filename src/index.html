@@ -8,18 +8,28 @@
 	<meta name="robots" content="noindex">
 	<title>Alex Clark - Home</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<link rel="icon" type="image/x-icon" href="./favicons/favicon.ico">
 	<script src="main.js"></script>
 </head>
 
 <body>
 	<header>
+		<img src="./favicons/android-chrome-192x192.png" alt="An icon of a toy robot head">
 		<h1>Alex Clark</h1>
 	</header>
-	<nav><a href="./index.html">Home</a><br><a href="./contact.html">Contact</a></nav>
+	<nav><a href="./index.html">Home</a><br><a href="./contact.html">Contact</a><br><a href="./gallery.html">Gallery</a>
+	</nav>
+
 	<main>
 		<section>
 			<h2>Web Development Concepts</h2>
-			<article>
+			<nav class="local">
+				<a href="#servers">Web Servers</a>
+				<a href="#design">Frontend Design</a>
+				<a href="#images">Optimizing Images</a>
+				<a href="#favicons">Favicons</a>
+			</nav>
+			<article id="servers">
 				<h3>Web Servers</h3>
 				<p>
 					<!-- Explain what index means as it relates to websites and servers. -->
@@ -59,7 +69,7 @@
 					<br />
 				</p>
 			</article>
-			<article>
+			<article id="design">
 				<h3>Frontend Design</h3>
 				<!--The concept of frontend design, in a <p> paragraph.-->
 				<p><strong>Frontend</strong> design is the part of the website that users interact with. Because of
@@ -104,6 +114,30 @@
 						than full file paths, which makes the link work, no matter the root the file is being stored in.
 					</li>
 				</ol>
+			</article>
+			<article id="images">
+				<h3>Optimizing Images</h3>
+				<!-- What are the 6 major specifications of images for the web?  And why? -->
+				<p>The 6 main specifications used for images on the web exist for multiple reasons, including clarity,
+					accessibility, search engine optimization, and general usability. These six specifications are as
+					follows: Images should have descriptive file names, and you should be able to understand the context
+					of the image just from the name. They should have small file size, to reduce load time. They should
+					be more exact sizes, to also reduce load time, as images being larger than they need to can slow
+					this down. They should also be the correct file format, so they can be displayed correctly and
+					efficiently for the type of image that needs to be shown. If possible, providing images of multiple
+					resolutions is ideal, as many different monitor sizes exist. Lastly, the color mode must be correct
+					in order to display the image correctly and as intended.
+					<!-- Which file formats are most appropriate for photos and for line art? And why? -->
+				<p>For photos, you can use JPG or PNG, depending on if transparency may be needed. Line art usually
+					uses SVG, which can produce lines mathematically, GIF, if the line art is animated, or PNG if the
+					line art has more detail or is derived from an image.</p>
+			</article>
+			<article id="favicons">
+				<h3>Favicons</h3>
+				<!-- How do browsers and devices use favicons?  -->
+				<p>Browsers and devices use favicons as ways to display websites, and are ways for users to quickly
+					identify where they need to go, and represent websites. On browsers, they usually show up in the tab
+					next to the title, and on phones or other devices they can look more like app icons</p>
 			</article>
 		</section>
 	</main>
