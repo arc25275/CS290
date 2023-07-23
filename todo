@@ -23,3 +23,24 @@
       - h2 in section called Contact @done
       - blank article @done
       - same footer as index @done
+- A3 Changes @done
+  - 2 Google Fonts @done
+  - 4 color variables @done
+  - Define the body{} selector's @done
+    - background-image - should cover the entire viewport, one time, from corner to corner @done
+    - The margin, padding, and max-width - should allow the background image to show on the left and right sides of the website when the browser is stretched to full screen @done
+    - color - must make use of the variables defined in the root (this is for text). @done
+    - font-family - must define the imported font as well as the generic font family @done
+  - Define the header{},  main{}, and footer{} blocks, so they incorporate a variety of text colors (using your variables), background colors (using your variables), margin, padding, and borders. @done
+    - Revise the height, width, margin, and padding of the header image, so it does not spill out of the header block @done
+    - Ensure that main block has a background color that improves readability of text on top of the background. @done
+    - Ensure that the copyright statement in the footer is legible with adequate color contrast and padding. @done
+  - Define the global and local nav{} block and anchors nav a{} and nav a:hover {} to look like large buttons (easy for fat fingers to touch, as if on a phone). Set text-decoration:none;  Incorporate a variety of text colors (using your variables), background colors (using your variables), margin, padding, and borders. @done
+    - Adding display:flex is encouraged but optional on this global nav block. @done
+    - Clarification: Give the .local navigation block a class name that differentiates it from the page-to-page navigation, so it can be styled differently. Style the local nav{} with display:flex to ensure all future anchors will fit within the body. Choose different sizes, colors, borders, etc. for the local navigation. @done
+  - Define the set of 10 figures{}s (that incorporate the .gallery class) using the flex method and a variety of margin, padding, border, and color variables. Include the image in each figure along with a <figcaption> @done
+  - Extra Credit Writing: edit the Home page content to include local navigation, and new articles with paragraphs about the following topic @done
+  - Cascading Stylesheets @done
+    - What are the main reasons to incorporate stylesheets in websites and apps? @done
+    - What are the 5 ways to incorporate styles? And why? @done
+    - Add an ID to the new article, and create a new <a> in the <nav> block on index.html to hyperlink down to each article from just under the second heading. This navigation block can go under the section heading, so it doesn't interfere with the main navigation at the top. @done
