@@ -1,0 +1,357 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+@font-face {
+    font-family: Victor Mono;
+    src: url(VictorMono-VariableFont_wght.ttf);
+}
+
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+/* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */
+:root {
+    --dark-sky: #84B1D9;
+    --medium-sky: #B6D6F2;
+    --light-sky: #D5E5F2;
+    --dark-leaf: #2A3726;
+    --shadow: #262D35;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+    /* Can alternatively define in html {} or :root {} */
+    background-image: url(./images-uncompressed/tam-background.jpg);
+    background-position-y: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: var(--light-sky);
+
+    color: var(--shadow);
+    font-family: "Roboto Mono";
+    padding: 5%;
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    font-size: 300%;
+    padding-bottom: 5%;
+}
+
+header img {
+    float: left;
+    margin-right: 5%;
+}
+
+header h1 {
+    position: relative;
+    padding-top: 2%;
+
+    align-items: center;
+}
+
+main {
+    background-color: var(--light-sky);
+    padding: 2% 5%;
+    margin: auto;
+    width: 90%;
+}
+
+section {
+    width: 100%;
+}
+
+article {}
+
+#topic1 {}
+
+#topic2 {}
+
+div {}
+
+aside {}
+
+footer {
+    background-color: var(--dark-sky);
+    padding: 1%;
+    margin-top: 1%;
+    font-size: larger;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+:target h3 {
+    text-decoration: underline;
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+    display: flex;
+    background-color: var(--medium-sky);
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+nav a {
+    color: var(--light-sky);
+    background-color: var(--dark-leaf);
+    text-decoration: none;
+    padding: 1% 6%;
+    margin: 1%;
+}
+
+.local {
+    flex-wrap: wrap;
+    background-color: var(--light-sky);
+}
+
+nav a:hover {
+    color: var(--dark-sky);
+    padding: 0.75% 5%;
+    margin: 1.25% 2%;
+}
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Victor Mono";
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/*  ----- Table ----- */
+table {}
+
+caption {}
+
+thead {}
+
+tbody {}
+
+tfoot {}
+
+tr {}
+
+tr:nth-child(even) {}
+
+th {}
+
+td {}
+
+td:nth-child(1) {}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+
+/*  ----- Form ----- */
+form {}
+
+fieldset {}
+
+legend {}
+
+label {}
+
+button {}
+
+input {}
+
+output {}
+
+meter {}
+
+progress {}
+
+select {}
+
+optgroup {}
+
+option {}
+
+textarea {}
+
+/* ----- Media ----- */
+.gallery {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+figure {
+    width: 20%;
+    margin: 0% 5%;
+    background-color: var(--medium-sky);
+    padding: 1%;
+}
+
+figcaption {
+    background-color: var(--dark-sky);
+    padding: 5%;
+}
+
+figure img {
+    width: 100%;
+}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery {}
+
+.floatright {}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
