@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <title>Alex Clark - Contact</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="./favicons/favicon.ico">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./favicons/android-chrome-192x192.png" alt="An icon of a toy robot head">
+        <h1>Alex Clark</h1>
+    </header>
+    <nav><a href="./index.html">Home</a><br><a href="./contact.html">Contact</a><br><a href="./gallery.html">Gallery</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <article>
+                <p>
+                    This form is so you can contact me and give feedback on my website or anything in it.
+                </p>
+            </article>
+        </section>
+        <form action="/response" method="post">
+            <fieldset id="personal">
+                <legend>Information about you</legend>
+                <label for="name">First and Last Name: <span class="required"> *</span>
+                    <input type="text" name="name" id="name" required autofocus placeholder="First and Last">
+                </label>
+                <label for="email">Email:<span class="required"> *</span>
+                    <input type="email" name="email" id="email" required pattern="[^ @]+@[^ @]+.[a-z]+"
+                        placeholder="email@domain.com">
+                </label>
+                <label for="message">
+                    Message:<span class="required"> * </span>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Feedback"
+                        required></textarea>
+                </label>
+                <p><span class="required"> * </span> Required fields</p>
+            </fieldset>
+            <fieldset id="feedback">
+                <legend>Feedback</legend>
+                <label for="picturechoice">Which picture in the gallery was your favorite?
+                    <select name="picturechoice" id="picturechoice">
+                        <option value="acropolis-cat">The cat at the Acropolis</option>
+                        <option value="bolognese">Bolognese Pasta</option>
+                        <option value="building-nametag">My name made out of buildings</option>
+                        <option value="delphi-writing">Greek writing in Delphi</option>
+                        <option value="osijek-ferriswheel">A ferris wheel in Osijek</option>
+                        <option value="osijek-street">A street in Osijek</option>
+                        <option value="reversi">A reversi app prototype</option>
+                        <option value="tombstone-opensauce">The robot Tombstone</option>
+                        <option value="trebuchet">A small wooden trebuchet</option>
+                        <option value="zagreb-church">A church in Zagreb</option>
+                    </select></label>
+                <label for="rating">What would you rate the website on a scale of 1 - 5?
+                    <label for="1"><input type="radio" name="rating" id="1" value="1">1</label>
+                    <label for="2"><input type="radio" name="rating" id="2" value="2">2</label>
+                    <label for="3"><input type="radio" name="rating" id="3" value="3">3</label>
+                    <label for="4"><input type="radio" name="rating" id="4" value="4">4</label>
+                    <label for="5"><input type="radio" name="rating" id="5" value="5">5</label>
+                </label>
+                <label for="helpful">Which of the explanations on the home page did you find helpful?
+                    <label for=""><input type="checkbox" name="helpful" id="servers" value="Web Servers">Web
+                        Servers</label>
+                    <label for=""><input type="checkbox" name="helpful" id="design" value="Frontend Design">Frontend
+                        Design</label>
+                    <label for=""><input type="checkbox" name="helpful" id="images" value="Optimizing Images">Optimizing
+                        Images</label>
+                    <label for=""><input type="checkbox" name="helpful" id="favicons" value="Favicons">Favicons</label>
+                    <label for=""><input type="checkbox" name="helpful" id="css" value="Cascading Stylesheets">Cascading
+                        Stylesheets</label>
+                    <label for=""><input type="checkbox" name="helpful" id="forms" value="Forms">Forms</label>
+                    <label for=""><input type="checkbox" name="helpful" id="express" value="Express">Express</label>
+                </label>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&#169; 2023 Alex Clark</p>
+    </footer>
+</body>
+
+</html>

@@ -240,17 +240,44 @@ datalist {}
 
 
 /*  ----- Form ----- */
-form {}
+form {
+    display: flex;
+}
 
-fieldset {}
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#personal {
+    width: 30%;
+}
+
+#feedback {
+    width: 80%;
+}
+
+#feedback label {
+    margin: 3% 0%;
+}
 
 legend {}
 
-label {}
+label {
+    margin-top: 5%;
+}
 
 button {}
 
 input {}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.required {
+    color: red;
+}
 
 output {}
 
@@ -264,7 +291,13 @@ optgroup {}
 
 option {}
 
-textarea {}
+textarea {
+    margin-left: 6px;
+    margin-bottom: 0%;
+    float: right;
+    height: 50%;
+
+}
 
 /* ----- Media ----- */
 .gallery {
