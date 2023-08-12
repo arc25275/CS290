@@ -21,12 +21,13 @@
     --light-sky: #D5E5F2;
     --dark-leaf: #2A3726;
     --shadow: #262D35;
+    --cloud: #f3faff;
 }
 
 /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
 body {
     /* Can alternatively define in html {} or :root {} */
-    background-image: url(./images-uncompressed/tam-background.jpg);
+    background-image: url(./images/tam-background.jpg);
     background-position-y: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -115,7 +116,7 @@ nav a {
     color: var(--light-sky);
     background-color: var(--dark-leaf);
     text-decoration: none;
-    padding: 1% 6%;
+    padding: 1% 3%;
     margin: 1%;
 }
 
@@ -126,7 +127,7 @@ nav a {
 
 nav a:hover {
     color: var(--dark-sky);
-    padding: 0.75% 5%;
+    padding: 0.75% 2%;
     margin: 1.25% 2%;
 }
 
@@ -141,7 +142,9 @@ dl {}
 
 li {}
 
-dt {}
+dt {
+    font-weight: bold;
+}
 
 dd {}
 
@@ -212,11 +215,15 @@ del {}
 ins {}
 
 /*  ----- Table ----- */
-table {}
+table {
+    width: 100%;
+}
 
 caption {}
 
-thead {}
+thead {
+    text-align: left;
+}
 
 tbody {}
 
@@ -224,11 +231,18 @@ tfoot {}
 
 tr {}
 
-tr:nth-child(even) {}
+tr:nth-child(odd) {
+    background-color: var(--medium-sky);
+}
 
-th {}
+th {
+    background-color: var(--dark-sky);
+    padding: 1%;
+}
 
-td {}
+td {
+    padding: 1%;
+}
 
 td:nth-child(1) {}
 
@@ -261,15 +275,25 @@ fieldset {
     margin: 3% 0%;
 }
 
+#orderinfo {
+    width: 33%;
+}
+
 legend {}
 
 label {
     margin-top: 5%;
 }
 
-button {}
+button {
+    height: fit-content;
+    margin-left: 5%;
+    margin-top: 5%;
+}
 
-input {}
+input {
+    background-color: var(--cloud);
+}
 
 input:invalid {
     border: 1px solid red;
@@ -296,6 +320,7 @@ textarea {
     margin-bottom: 0%;
     float: right;
     height: 50%;
+    background-color: var(--cloud);
 
 }
 

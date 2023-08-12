@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <title>Alex Clark - Order</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="./favicons/favicon.ico">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./favicons/android-chrome-192x192.png" alt="An icon of a toy robot head">
+        <h1>Alex Clark</h1>
+    </header>
+    <nav><a href="./index.html">Home</a><br><a href="./contact.html">Contact</a><br><a
+            href="./gallery.html">Gallery</a><br><a href="./order.html">Order</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Order</h2>
+            <article>
+                <p>This page is for ordering a selection of the available items.</p>
+                <form action="/orderresponse" method="POST">
+                    <fieldset id="orderinfo">
+                        <legend>Information about you</legend>
+                        <label for="name">First and Last Name: <span class="required"> *</span>
+                            <input type="text" name="name" id="name" required autofocus placeholder="First and Last">
+                        </label>
+                        <label for="email">Email:<span class="required"> *</span>
+                            <input type="email" name="email" id="email" required pattern="[^ @]+@[^ @]+.[a-z]+"
+                                placeholder="email@domain.com">
+                        </label>
+                        <label for="address">Address: <span class="required"> *</span>
+                            <input type="text" name="address" id="address" required autofocus
+                                placeholder="Address, City, State Zip">
+                        </label>
+                        <label for="message">
+                            Delivery Instructions:<span class="required"> * </span>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Instructions"
+                                required></textarea>
+                        </label>
+                        <p><span class="required"> * </span> Required fields</p>
+                    </fieldset>
+                    <fieldset id="Products">
+                        <legend>Products</legend>
+                        <table>
+                            <caption>Select one item</caption>
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AGYM</td>
+                                    <td><label for="agym"><input type="radio" name="product" value="AGYM" id="agym">
+                                            Spinning Cat
+                                            Scratcher
+                                            Ball</label></td>
+                                    <td>$52.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Jasonwell</td>
+                                    <td><label for="jasonwell"><input type="radio" name="product" value="Jasonwell"
+                                                id="jasonwell">
+                                            Foldable Dog Pool</label></td>
+                                    <td>$27.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Expawlorer</td>
+                                    <td><label for="expawlorer"><input type="radio" name="product" value="Expawlorer"
+                                                id="expawlorer">
+                                            Dog Fence Window</label></td>
+                                    <td>$30.50</td>
+                                </tr>
+                                <tr>
+                                    <td>Lollimeow</td>
+                                    <td><label for="lollimeow"><input type="radio" name="product" value="Lollimeow"
+                                                id="lollimeow">
+                                            Capsule Pet Travel
+                                            Backpack</label></td>
+                                    <td>$59.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Drool'd</td>
+                                    <td><label for="droold"><input type="radio" name="product" value="Drool'd"
+                                                id="droold"> Cat Hamster
+                                            Wheel</label></td>
+                                    <td>$349.75</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <label for="quantity">
+                            How many of the selected item? <span class="required"> * </span><input type="number"
+                                name="quantity" id="quantity" placeholder="Quantity" required></label>
+                        <button type="submit">Submit Order</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; 2023 Alex Clark</p>
+    </footer>
+</body>
+
+</html>
